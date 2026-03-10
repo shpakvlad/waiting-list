@@ -1,59 +1,43 @@
-
-.panels {
+.kanban-board {
     display: flex;
-    flex-direction: row;
-    height: 100%;
-
-    .panel {
-        flex: 1;
-        padding: 12px;
-        border-radius: 8px;
-    }
-
-
-    .panel-name-list {
-        background-color: var(--rose);
-    }
-
-    .panel-answering {
-        background-color: var(--blue);
-    }
-
-    .panel-answered {
-        background-color: var(--yellow);
-    }
-
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
 }
-
-.name-list {
-    min-height: 0;
-    overflow-y: auto;
-
-    .name-item {
-        background-color: white;
-        padding: 8px;
-        border-radius: 8px;
-        font-size: 24px;
-
-        &:not(:last-of-type) {
-            margin-bottom: 8px;
-        }
-    }
-}
-
-.button {
-    margin-inline: 2px;
-    min-width: 100px;
-    padding: 8px;
-    border: none;
-    outline: none;
+.column {
+    flex: 1;
+    background: #f4f5f7;
+    padding: 10px;
     border-radius: 8px;
-    background-color: var(--grey);
+    min-height: 400px;
 }
-
-
-
-
-
-
-
+.move-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 150px; /* Опускаем кнопки пониже */
+}
+.student-card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+/* Класс для выделенного участника */
+.student-card.selected {
+    border-color: #007bff;
+    background-color: #e9f5ff;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.note-input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+}
