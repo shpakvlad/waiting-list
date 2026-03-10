@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "id": 86054645,
+      "group_name": "49 A2",
+      "notes": "2026 sausio 19, Pr, Tr, 18.30-20.00"
+    },
+    {
+      "id": 54645645,
+      "group_name": "48 A1",
+      "notes": "2026 sausio 24, Pr, Tr, 20.00-21.30"
+    },
+    {
+      "id": 42347556,
+      "group_name": "50 B1",
+      "notes": "2026 sausio 16, At, Kt, 18.30-20.00"
+    }
+  ],
+  "students": [
+    {
+      "id": 759487955,
+      "name": "Vladyslav Shpakov",
+      "status": "idle",
+      "group": 86054645
+    },
+    {
+      "id": 7768657876,
+      "name": "Ivan Ivanov",
+      "status": "answer",
+      "group": 54645645
+    },
+    {
+      "id": 759487955,
+      "name": "Petr Petrov",
+      "status": "answered",
+      "group": 42347556
+    }
+  ]
+}
